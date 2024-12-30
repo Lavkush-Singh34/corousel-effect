@@ -4,24 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-  <header style="background-color: #f0f0f0; padding: 1em 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);"> 
-    <h1 style="font-size: 3em; text-align: center; width: 100%; font-family: 'Arial', sans-serif; font-weight: bold;">Sound & DJ Services</h1>
+  <header>
+    <h1>Sound & DJ Services</h1>
   </header>  
 
-  <nav style="background-color: #333; color: white; text-align: center; padding: 1em 0;">
-    <ul style="list-style: none; margin: 0; padding: 0;">
-      <li style="display: inline; margin: 0 1em;"><a href="#" style="color: white; text-decoration: none;">Home</a></li>
-      <li style="display: inline; margin: 0 1em;"><a href="#" style="color: white; text-decoration: none;">Services</a></li>
-      <li style="display: inline; margin: 0 1em;"><a href="#" style="color: white; text-decoration: none;">About</a></li>
-      <li style="display: inline; margin: 0 1em;"><a href="#" style="color: white; text-decoration: none;">Contact</a></li>
-      <li style="display: inline; margin: 0 1em;"><a href="#" style="color: white; text-decoration: none;">Gallery</a></li>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Gallery</a></li>
     </ul>
   </nav>
 
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-top: 2em;">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -29,13 +30,13 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 1" style="max-height: 500px; object-fit: cover;"> 
+        <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 1"> 
       </div>
       <div class="carousel-item">
-        <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 2" style="max-height: 500px; object-fit: cover;">
+        <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 2">
       </div>
       <div class="carousel-item">
-        <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 3" style="max-height: 500px; object-fit: cover;">
+        <img src="https://placehold.co/600x400" class="d-block w-100" alt="Image 3">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -48,34 +49,20 @@
     </button>
   </div>
 
-  <!-- Remember to include Bootstrap CSS and JS for the carousel to work -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  
-  <footer style="background-color: #333; color: white; text-align: center; padding: 2em 0; margin-top: 2em;">
-    <p style="margin: 0.5em 0;">&copy; 2023 Your Company Name</p>
-    <p style="margin: 0.5em 0;">
-      Contact: <a href="mailto:your.email@example.com" style="color: white; text-decoration: none;">your.email@example.com</a> | 
+  <footer>
+    <p>&copy; 2023 Your Company Name</p>
+    <p class="contact-info">
+      Contact: <a href="mailto:your.email@example.com">your.email@example.com</a> | 
       Phone: (123) 456-7890
     </p>
-    <ul style="list-style: none; margin: 0; padding: 0;">
-      <li style="display: inline; margin: 0 1em;">
-        <a href="#" style="color: white; text-decoration: none;">
-          <i class="fab fa-facebook"></i> Facebook 
-        </a>
-      </li>
-      <li style="display: inline; margin: 0 1em;">
-        <a href="#" style="color: white; text-decoration: none;">
-          <i class="fab fa-instagram"></i> Instagram
-        </a>
-      </li>
-      <li style="display: inline; margin: 0 1em;">
-        <a href="#" style="color: white; text-decoration: none;">
-          <i class="fab fa-twitter"></i> Twitter
-        </a>
-      </li>
+    <ul>
+      <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
     </ul>
   </footer>
-  <script defer type="text/javascript" src="/main.js"></script> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script defer type="text/javascript" src="main.js"></script> 
 </body>
 </html>
